@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#102f2a">
+  <meta name="description" content="GeoMates — your pocket companion for geological engineering study.">
+  <title>GeoMates — Geological Engineering Study Buddy</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar">
+      <a class="brand" href="#" aria-label="GeoMates home"><span class="brand-mark">G<span>◆</span></span><span>GeoMates<small>YOUR GEOLOGY COMPANION</small></span></a>
+      <button class="new-chat" id="new-chat">＋ <span>New question</span></button>
+      <p class="nav-label">LEARN</p>
+      <button class="nav-item active" data-view="home"><span>⌂</span> Overview</button>
+      <button class="nav-item" data-view="tutor"><span>✦</span> Ask GeoMate AI</button>
+      <button class="nav-item" data-view="notes"><span>▤</span> Study notes</button>
+      <button class="nav-item" data-view="quiz"><span>✓</span> Quick quizzes</button>
+      <p class="nav-label history-heading">RECENT QUESTIONS</p>
+      <div id="history-list" class="history-list"><p class="muted small">Your questions will appear here.</p></div>
+      <div class="sidebar-bottom"><div class="rock-icon">◈</div><div><strong>Keep exploring</strong><p>One concept at a time.</p></div></div>
+    </aside>
+    <main class="main-area">
+      <header class="topbar">
+        <button class="icon-btn menu-btn" id="menu-btn" aria-label="Open menu">☰</button>
+        <div class="breadcrumb">Study space <span>/</span> <strong id="crumb">Overview</strong></div>
+        <div class="top-actions"><span class="online-dot"></span><span class="small">Your personal study space</span></div>
+      </header>
+      <section id="content" class="content"></section>
+      <footer>Made for curious minds <span>•</span> Learn the Earth, understand the world.</footer>
+    </main>
+  </div>
+  <div class="toast" id="toast" role="status"></div>
+  <script src="/app.js"></script>
+</body>
+</html>
